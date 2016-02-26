@@ -1,0 +1,500 @@
+{{extend 'layout.html'}}
+
+{{block content}}
+
+        <!-- Page Content -->
+          <ul class="nav navbar-nav navbar-right">
+            {{='auth' in globals() and auth.navbar('Welcome',mode='dropdown') or ''}}
+          </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <center>
+                            <h1>Bienvenido, Usuario.</h1>
+                            <p>A continuación puede encontrar un resumen de sus últimos movimientos. </p>
+                            <code><a href="#menu-toggle" class="" id="menu-toggle">Para ocultar clic aquí</a></code>
+                            </br>
+                        </center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="rounded">
+                                <div class="roundedwhite">
+                                    <center>
+                                        <h3>Solicitudes Recientes</h3>
+                                        <hr WIDTH="30%">
+                                        <p>De hace una semana o menos tiempo.</p>
+                                    </center>
+
+<table class="table table-hover table-striped ">
+    <thead>
+        <th class="hColumns">Fecha</th>
+        <th>Descripcion</th>
+        <th class="hColumns">Estado</th>
+        <th class="hColumns">Ubicación</th>
+        <th class="hColumns">Otra Vaina</th>
+        <th></th>
+    </thead>
+
+    <tbody>
+        <tr data-toggle="collapse" data-target="#accordion" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion" class="collapse"<div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion2" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion2" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion3" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns">
+                <a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion3" class="collapse"<div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion5" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion5" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion6" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion6" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+
+
+
+<!-- borrar desde aca -->
+
+
+
+
+
+        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>        <tr data-toggle="collapse" data-target="#accordion4" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion4" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+
+
+
+<!-- borrar hast aca -->
+
+
+
+    </tbody>
+</table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="rounded">
+                                <div class="roundedwhite">
+                                    <center>
+                                        <h3>Solicitudes Antigüas</h3>
+                                        <hr WIDTH="30%">
+                                        <p>Blablablablabla, blablabla.</p>
+                                    </center>
+<table class="table table-hover table-striped ">
+    <thead>
+        <th class="hColumns">Fecha</th>
+        <th>Descripcion</th>
+        <th class="hColumns">Estado</th>
+        <th class="hColumns">Ubicación</th>
+        <th class="hColumns">Otra Vaina</th>
+        <th></th>
+    </thead>
+
+    <tbody>
+        <tr data-toggle="collapse" data-target="#accordion-2" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion-2" class="collapse"<div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+        <tr data-toggle="collapse" data-target="#accordion2-2" class="clickable">
+            <td class="hColumns">15-10-2015</td>
+            <td>Urinario sin papel toilette...</td>
+            <td class="hColumns">En espera</td>
+            <td class="hColumns">MyS-523A</td>
+            <td class="hColumns"><a href="">Gallinas Voladoras</a></td>
+            <td>
+                <a href="www.google.com">
+                    <img src="{{=URL('static','images/icon_inspect.png')}}" width="15px" ">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="padding:0">
+                <div id="accordion2-2" class="collapse"><div style="padding: 8px;">Acá hay mucha información super importante de la vida y cosas así, como turumero y los tostones playeros.</div></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 rounded ">
+                        <div class="roundedwhite">
+                            <h3>Notificaciones</h3>
+                            <hr WIDTH="50%"  ALIGN="LEFT">
+                            <p>A continuación puede encontrar un resumen de sus últimos movimientos.</p>
+                            <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Truncated_Bar_Graph.svg/2000px-Truncated_Bar_Graph.svg.png" width="100%">-->
+
+                            <a href="http://www.google.com"> <div class="alert-box notice"><span>Nuevo correo: </span>Yesiree: Holis, como estan...</div></a>
+                            <a href="http://www.google.com"> <div class="alert-box warning"><span>Solicitud Rechazada: </span>Por negro.</div></a>
+                            <a href="http://www.google.com"> <div class="alert-box success"><span>Solicitud procesada: </span>Su solicitud de número: #6666 esta siendo procesada.</div></a>
+                            <a href="http://www.google.com"> <div class="alert-box notice"><span>Nuevo correo: </span>Write your warning message here.</div></a>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+        <!-- /#page-content-wrapper -->
+{{end}}

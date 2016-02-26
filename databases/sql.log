@@ -1,0 +1,136 @@
+timestamp: 2016-02-19T09:43:50.047874
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2016-02-19T09:43:50.159284
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2016-02-19T09:43:50.286788
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  ,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-02-19T09:43:50.416223
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE  ,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2016-02-19T09:43:50.527916
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  ,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2016-02-19T09:43:50.663312
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  ,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2016-02-19T09:43:50.798981
+CREATE TABLE inventario(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    material CHAR(512),
+    cantidad DOUBLE
+);
+success!
+timestamp: 2016-02-19T09:43:50.916921
+CREATE TABLE edificio(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(512),
+    nomenclatura CHAR(512)
+);
+success!
+timestamp: 2016-02-19T09:43:51.055225
+CREATE TABLE lugar(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    edificio INTEGER REFERENCES edificio (id) ON DELETE CASCADE  ,
+    espacio CHAR(512),
+    referencia CHAR(512),
+    extension_tlf INTEGER
+);
+success!
+timestamp: 2016-02-19T09:43:51.167693
+CREATE TABLE area(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(512),
+    nomenclatura CHAR(512)
+);
+success!
+timestamp: 2016-02-19T09:43:51.291744
+CREATE TABLE supervisor(
+    area INTEGER REFERENCES area (id) ON DELETE CASCADE  ,
+    nombre CHAR(512),
+    apellido CHAR(512),
+    identificador CHAR(512) NOT NULL,
+    PRIMARY KEY(identificador)) ;
+success!
+timestamp: 2016-02-19T09:43:51.413265
+CREATE TABLE empleado(
+    nombre CHAR(512),
+    apellido CHAR(512),
+    identificador CHAR(512) NOT NULL,
+    cargo CHAR(512),
+    area INTEGER REFERENCES area (id) ON DELETE CASCADE  ,
+    tlf CHAR(512),
+    PRIMARY KEY(identificador)) ;
+success!
+timestamp: 2016-02-19T09:43:51.525158
+CREATE TABLE unidad(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(512) UNIQUE
+);
+success!
+timestamp: 2016-02-19T09:43:51.627992
+CREATE TABLE estatus_solicitud(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_estatus CHAR(512) UNIQUE
+);
+success!
+timestamp: 2016-02-19T09:43:51.747120
+CREATE TABLE prioridad(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_prioridad CHAR(512) UNIQUE
+);
+success!
+timestamp: 2016-02-19T09:43:51.859347
+CREATE TABLE espacio(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_espacio CHAR(512) UNIQUE
+);
+success!
+timestamp: 2016-02-19T09:43:51.982561
+CREATE TABLE unidad_metrica(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_unidadMetrica CHAR(512) UNIQUE
+);
+success!
+timestamp: 2016-02-19T11:33:34.111061
+ALTER TABLE inventario ADD unidad_metrica INTEGER REFERENCES unidad_metrica (id) ON DELETE CASCADE  ;
+success!
